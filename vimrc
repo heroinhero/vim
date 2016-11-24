@@ -13,6 +13,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ervandew/supertab'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'mhinz/vim-startify'
 Plugin 'burnettk/vim-angular'
 Plugin 'scrooloose/nerdtree'
@@ -56,8 +57,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-execute pathogen#infect()
-call pathogen#helptags()
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 autocmd VimEnter * NERDTree
@@ -66,7 +65,7 @@ let mapleader=","
 :imap jk <Esc>
 :syntax on
 :set background=dark
-:colorscheme adventurous
+:colorscheme adventurous 
 :iabbrev </ </<C-X><C-O>
 cmap w!! w !sudo tee > /dev/null %
 :set mouse=a
@@ -90,6 +89,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_python_python_exec = '/usr/local/bin/python3'
+
 
 let python_highlight_all=1
 syntax on
@@ -103,4 +104,4 @@ set clipboard=unnamed
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 let g:airline_theme='base16'
-set shell=/bin/bash
+set shell=/usr/local/bin/bash
