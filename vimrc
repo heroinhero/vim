@@ -9,8 +9,12 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ervandew/supertab'
 Plugin 'mhinz/vim-startify'
+Plugin 'burnettk/vim-angular'
 Plugin 'scrooloose/nerdtree'
 Plugin 'felixhummel/setcolors.vim'
 Plugin 'tmhedberg/SimpylFold'
@@ -67,10 +71,6 @@ let mapleader=","
 cmap w!! w !sudo tee > /dev/null %
 :set mouse=a
 "split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 set foldmethod=syntax
 set foldlevel=99
 nnoremap <space> za
@@ -103,3 +103,4 @@ set clipboard=unnamed
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 let g:airline_theme='base16'
+set shell=/bin/bash
