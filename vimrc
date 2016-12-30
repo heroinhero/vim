@@ -8,7 +8,6 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'airblade/vim-gitgutter'
@@ -104,4 +103,3 @@ set clipboard=unnamed
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 let g:airline_theme='base16'
-set shell=/usr/local/bin/bash
