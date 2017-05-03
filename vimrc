@@ -22,7 +22,6 @@ Plugin 'felixhummel/setcolors.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/indentpython.vim'
-Bundle 'Valloric/YouCompleteMe'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-fugitive'
@@ -43,6 +42,7 @@ Plugin 'tpope/vim-surround'
 
 
 "HTML Plugins
+"
 Plugin 'mattn/emmet-vim'
 Plugin 'rstacruz/sparkup'
 
